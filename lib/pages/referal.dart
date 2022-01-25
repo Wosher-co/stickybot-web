@@ -7,14 +7,12 @@ class ReferalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Column(
-          children: [
-            Text("Referal Page"),
-            Text(this.refCode),
-          ],
-        ),
+    return Center(
+      child: Column(
+        children: [
+          Text("Referal Page"),
+          Text(this.refCode),
+        ],
       ),
     );
   }

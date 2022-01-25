@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
     String? referalCode = Uri.base.queryParameters["ref"];
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: referalCode == null
-          ? new HomePage()
-          : new ReferalPage(
+          ? HomePage()
+          : ReferalPage(
               refCode: referalCode,
             ),
     );
