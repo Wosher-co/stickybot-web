@@ -8,13 +8,15 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double widht = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Stack(
       children: [
         const AnimatedGradient(),
         Center(
           child: SizedBox(
-            width: 225,
-            height: 75,
+            width: widht * 0.156,
+            height: height * 0.099,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 shape: const RoundedRectangleBorder(
