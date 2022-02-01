@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.18
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +24,12 @@ flutter:
 
   uses-material-design: true
 
-  # assets:
+  assets:
+    - assets/instagram.png
+    - assets/twitter.png
+    - assets/facebook.png
+    - assets/tiktok.png
+    - assets/youtube.png
+    - assets/linkedin.png
 
   # fonts:
