@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stickybotweb/widget/screen.dart';
 
 class ReferalPage extends StatelessWidget {
   final String refCode;
@@ -7,13 +8,8 @@ class ReferalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        children: [
-          Text("Referal Page"),
-          Text(this.refCode),
-        ],
-      ),
-    );
+    return ScreenPage(
+        description:
+            'Te han invitado a usar StickyBot, con el codigo: $refCode');
   }
 }
